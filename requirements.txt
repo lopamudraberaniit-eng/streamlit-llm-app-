@@ -1,0 +1,13 @@
+groq
+streamlit
+python-dotenv
+pandas
+langchain
+langchain-groq
+langchain-community
+sentence-transformers
+faiss-cpu
+chromadb
+pydantic
+pillow
+requests

@@ -1,0 +1,10 @@
+# .gitignore
+# Never commit API keys or large data files
+
+.env
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+venv/
+*.egg-info/
