@@ -17,7 +17,7 @@ from sprint_01.data_loader import load_order_context, get_all_order_ids
 def build_system_prompt(order_context: str) -> str:
     """
     Builds the system prompt for the customer support assistant.
-    Injects real order context from the Olist dataset.
+    Injects real order context from the dataset.
     This is the 'system' role in the role-based message structure.
     """
     return f"""You are a customer support assistant for an 
@@ -78,7 +78,7 @@ if __name__ == '__main__':
     print("=" * 60)
 
     # --------------------------------------------------------
-    # DEMO STEP 1: Load a real order from the Olist dataset
+    # DEMO STEP 1: Load a real order from the dataset
     # --------------------------------------------------------
 
     order_ids = get_all_order_ids()
@@ -130,7 +130,7 @@ if __name__ == '__main__':
 2. USER ROLE     : Carried the customer's query to the model
 3. TOKENIZATION  : Both messages were tokenized before processing
 4. API CALL      : Groq processed tokens and returned a response
-5. REAL DATA     : Response is grounded in actual Olist order data
+5. REAL DATA     : Response is grounded in actual order data
 6. LIMITATION    : If order ID is wrong, model says so — no hallucination
     """)
 
